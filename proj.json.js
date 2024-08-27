@@ -1,4 +1,4 @@
-{
+var projData = {
     "projects":
     [{
             "cover": "sashami.gif",
