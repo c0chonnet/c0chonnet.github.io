@@ -1,0 +1,151 @@
+::selection {
+  color: white;
+  background: black;
+}
+
+body {
+	 font-family: "Courier", monospace;
+	 font-size: 14px;
+                                                
+}
+
+h2 {font-size: 18px;
+}
+
+
+nav {
+	padding: 10px 60px 5px;
+}
+
+main {
+	margin: 60px 100px;
+}
+
+footer {
+	position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+	background-color:inherit;
+}
+
+
+.top-nav {
+	position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+	background-color:inherit;
+	z-index: 999;
+}
+
+
+
+#masonry {
+    --masonry-gap: 3px;
+    --masonry-brick-width: 200px;
+    column-gap: var(--masonry-gap);
+    column-fill: initial;
+    column-width: var(--masonry-brick-width);
+}
+
+#masonry > * {
+    break-inside: avoid;
+}
+
+
+.brick {
+    padding:var(--masonry-gap);
+	position: relative;
+}
+
+
+.tag {
+	 text-decoration: none;
+	 border-radius: 16px;
+	 text-transform: none;
+	 font-size: 1.1rem;
+	 cursor:pointer;
+}
+
+.project-link {
+	color: white;
+}
+
+.brick {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.project-cover {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-description {
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 1em; 
+    box-sizing: border-box;
+}
+
+.project-description .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+
+.brick:hover .cover {
+    display: none;
+}
+
+.brick:hover .project-description {
+    opacity: 1;
+    visibility: visible;
+}
+
+.social {
+	width: 3rem;
+}
+
+.vaenaton {
+	background-image:url("media/vntn.png");
+	 background-repeat: no-repeat;
+	 background-size: contain;
+	  background-position-x:95%; 
+	  background-position-y:center; 
+	  background-size: 40px;
+}
+
+.photo {
+	max-width: 60%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+	margin: 170px 60px;
+}
+.banner {
+	visibility:hidden;
+}
+.photo {
+	max-width: 100%;
+}
+}
