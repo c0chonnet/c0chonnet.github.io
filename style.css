@@ -154,4 +154,18 @@ nav {
 	max-width: 100%;
 }
 
+#masonry {
+        column-width: 100%;
+        column-gap: 0;
+    }
+
+    .brick {
+        width: 100%;
+        padding: 0; 
+    }
+
+    #masonry > * {
+        break-inside: auto; 
+    }
+
 }
