@@ -40,6 +40,7 @@ function unhoverG(g) {
 
 let selectedTag = '';
 
+
 if (document.getElementById('masonry')) {
 
     document.getElementById('top-menu').addEventListener('click', event => {
@@ -112,7 +113,7 @@ if (document.getElementById('masonry')) {
         return col;
     }
 
-    function filterAndDisplayProjects() {
+    function filterAndDisplayProjects(grid) {
 
             const filteredProjects = selectedTag ? projData.projects.filter(proj => proj.tags.includes(selectedTag)) : projData.projects;
             grid.innerHTML = '';
@@ -123,5 +124,5 @@ if (document.getElementById('masonry')) {
 
     }
 
-    filterAndDisplayProjects();
-}
+    filterAndDisplayProjects(grid);
+};
