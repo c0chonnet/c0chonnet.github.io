@@ -142,6 +142,11 @@ footer {
   main {
 	margin: 170px 40px;
 }
+
+nav {
+	font-size: 10px;
+}
+
 .banner {
 	visibility:hidden;
 }
