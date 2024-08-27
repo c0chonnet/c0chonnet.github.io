@@ -108,11 +108,11 @@ footer {
 }
 
 
-.brick:hover .cover {
+.brick:hover .cover, .brick:active .cover  {
     display: none;
 }
 
-.brick:hover .project-description {
+.brick:hover .project-description, .brick:active .project-description {
     opacity: 1;
     visibility: visible;
 }
@@ -140,7 +140,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   main {
-	margin: 170px 60px;
+	margin: 170px 40px;
 }
 .banner {
 	visibility:hidden;
@@ -148,4 +148,5 @@ footer {
 .photo {
 	max-width: 100%;
 }
+
 }
