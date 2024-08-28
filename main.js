@@ -38,7 +38,7 @@ function unhoverG(g) {
     g.setAttribute('src', '../media/git1.png');
 }
 
-let selectedTag = '';
+var selectedTag = '';
 
 
 if (document.getElementById('masonry')) {
@@ -51,32 +51,30 @@ if (document.getElementById('masonry')) {
         }
     });
 
-    const grid = document.getElementById('masonry');
-
     function createBrick(proj) {
-        const col = document.createElement('div');
+        var col = document.createElement('div');
         col.className = 'brick';
 
-        const img = document.createElement('img');
+        var img = document.createElement('img');
         img.className = 'project-cover';
         img.src = `../media/projects/${proj.cover}`;
         col.appendChild(img);
 
-        const descDiv = document.createElement('div');
+        var descDiv = document.createElement('div');
         descDiv.className = 'project-description';
 
-        const h2 = document.createElement('h2');
+        var h2 = document.createElement('h2');
         h2.innerText = proj.title;
         descDiv.appendChild(h2);
 
         if (proj.type === 'artwork') {
-            const desc = document.createElement('p');
+            var desc = document.createElement('p');
             desc.innerText = proj.description;
             descDiv.appendChild(desc);
 
             if (proj.ext_link) {
-                const p = document.createElement('p');
-                const link = document.createElement('a');
+                var p = document.createElement('p');
+                var link = document.createElement('a');
                 link.target = '_blank';
                 link.innerText = proj.ext_link_text;
                 link.className = 'project-link';
@@ -87,8 +85,8 @@ if (document.getElementById('masonry')) {
         }
 
         if (proj.type === 'page') {
-            const p = document.createElement('p');
-            const link = document.createElement('a');
+            var p = document.createElement('p');
+            var link = document.createElement('a');
             link.innerText = 'open...';
             link.className = 'project-link';
             link.href = proj.link;
@@ -96,10 +94,10 @@ if (document.getElementById('masonry')) {
             descDiv.appendChild(p);
         }
 
-        const tags = document.createElement('div');
+        var tags = document.createElement('div');
         tags.className = 'tags';
         proj.tags.forEach(tag => {
-            const span = document.createElement('span');
+            var span = document.createElement('span');
             span.className = 'tag';
             span.innerText = tag;
             tags.appendChild(span);
@@ -113,16 +111,16 @@ if (document.getElementById('masonry')) {
         return col;
     }
 
-    function filterAndDisplayProjects(grid) {
-
-            const filteredProjects = selectedTag ? projData.projects.filter(proj => proj.tags.includes(selectedTag)) : projData.projects;
+    function filterAndDisplayProjects() {
+            var grid = document.getElementById('masonry');
+            var filteredProjects = selectedTag ? projData.projects.filter(proj => proj.tags.includes(selectedTag)) : projData.projects;
             grid.innerHTML = '';
             filteredProjects.forEach(proj => {
-                const brick = createBrick(proj);
+                var brick = createBrick(proj);
                 grid.appendChild(brick);
             });
 
     }
 
-    filterAndDisplayProjects(grid);
+    filterAndDisplayProjects();
 };

@@ -169,3 +169,15 @@ nav {
     }
 
 }
+
+@media only screen and (min-width: 1930px) {
+
+#masonry {
+    --masonry-brick-width: 350px;
+
+}
+
+  main {
+	margin: 150px 200px;
+}
+}
