@@ -20,6 +20,16 @@ var projData = {
             "title": "2024 amsterdam sketchbook",
             "tags": ["bw", "sketchbooks"]
         },
+		 {
+            "cover": "joecat.jpg",
+            "type": "artwork",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "2023 wood, texture paste, acrylics",
+            "title": "isepäi",
+            "tags": ["paintings"]
+        },
         {
             "cover": "funeral.jpg",
             "type": "artwork",
@@ -32,12 +42,12 @@ var projData = {
         },
         {
             "cover": "dnd.jpg",
-            "type": "artwork",
-            "link": "",
+            "type": "page",
+            "link": "dnd2224",
             "ext_link": "",
             "ext_link_text": "",
             "description": "",
-            "title": "nude sketches",
+            "title": "2022-2024 ink nude sketches",
             "tags": ["bw"]
         },
         {
@@ -116,6 +126,27 @@ var projData = {
             "ext_link_text": "",
             "description": "",
             "title": "2013 pskov series",
+            "tags": ["paintings"]
+        },
+		{
+            "cover": "trees.jpg",
+            "type": "artwork",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "",
+            "title": "2012 gouache, ink",
+            "tags": ["bw", "paintings"]
+        },
+		
+		{
+            "cover": "feb.jpg",
+            "type": "artwork",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "2012 gouache",
+            "title": "february",
             "tags": ["paintings"]
         }
     ]
