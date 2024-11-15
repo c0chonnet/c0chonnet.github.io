@@ -41,6 +41,7 @@ function unhoverG(g) {
 var selectedTag = '';
 
 
+document.addEventListener('DOMContentLoaded', function () {
 if (document.getElementById('masonry')) {
 
     document.getElementById('top-menu').addEventListener('click', event => {
@@ -124,3 +125,4 @@ if (document.getElementById('masonry')) {
 
     filterAndDisplayProjects();
 };
+});

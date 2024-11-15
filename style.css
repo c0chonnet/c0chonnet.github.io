@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 ::selection {
   color: white;
   background: black;
@@ -57,6 +63,9 @@ footer {
 .brick {
     padding:var(--masonry-gap);
 	position: relative;
+    position: relative;
+    display: inline-block;
+    width: 200px;
 }
 
 
@@ -72,15 +81,9 @@ footer {
 	color: white;
 }
 
-.brick {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
 .project-cover {
     display: block;
-    width: 100%;
+    width: 200px;
     height: auto;
 }
 
@@ -181,3 +184,5 @@ nav {
 	margin: 150px 200px;
 }
 }
+
+
