@@ -1,6 +1,16 @@
 var projData = {
     "projects":
     [{
+            "cover": "salme.png",
+            "type": "artwork",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "November 2024, Tallinn, Salme kultuurikeskus",
+            "title": "2024 Drink and Draw exhibition",
+            "tags": ["bw", "news"]
+        }, 
+		{
             "cover": "sashami.gif",
             "type": "artwork",
             "link": "",
