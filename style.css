@@ -24,7 +24,7 @@ nav {
 }
 
 main {
-	margin: 60px 100px;
+	margin: 60px 150px;
 }
 
 footer {
@@ -33,6 +33,12 @@ footer {
     left: 0;
     right: 0;
 	background-color:inherit;
+}
+
+.banner {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 
@@ -48,11 +54,9 @@ footer {
 
 
 #masonry {
-    --masonry-gap: 3px;
-    --masonry-brick-width: 200px;
-    column-gap: var(--masonry-gap);
+    column-gap: 3px;
     column-fill: initial;
-    column-width: var(--masonry-brick-width);
+    column-width: 200px;
 }
 
 #masonry > * {
@@ -61,7 +65,6 @@ footer {
 
 
 .brick {
-    padding:var(--masonry-gap);
 	position: relative;
     position: relative;
     display: inline-block;
@@ -83,7 +86,7 @@ footer {
 
 .project-cover {
     display: block;
-    width: 200px;
+    width: 100%;
     height: auto;
 }
 
@@ -107,7 +110,7 @@ footer {
 .project-description .tags {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin-top: 2px;
 }
 
 
@@ -176,7 +179,7 @@ nav {
 @media only screen and (min-width: 1930px) {
 
 #masonry {
-    --masonry-brick-width: 350px;
+    column-width: 350px;
 
 }
 

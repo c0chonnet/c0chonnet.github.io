@@ -1,6 +1,16 @@
 var projData = {
     "projects":
     [{
+            "cover": "tlfsit.gif",
+            "type": "artwork",
+            "link": "",
+            "ext_link": "https://vaenaton.itch.io/the-last-flower-shop-in-town",
+            "ext_link_text": "play in browser...",
+            "description": "visual novel game",
+            "title": "2024 the last flower shop in town",
+            "tags": ["bw", "tech", "news"]
+        }, 
+    {
             "cover": "salme.png",
             "type": "artwork",
             "link": "",
@@ -10,16 +20,6 @@ var projData = {
             "title": "2024 Drink and Draw exhibition",
             "tags": ["bw", "news"]
         }, 
-		{
-            "cover": "sashami.gif",
-            "type": "artwork",
-            "link": "",
-            "ext_link": "https://sashami.opsti.ee/",
-            "ext_link_text": "visit site...",
-            "description": "design and development",
-            "title": "2024 interactive Tartu map of houses by Sashami",
-            "tags": ["tech"]
-        },
         {
             "cover": "ams.jpg",
             "type": "artwork",
@@ -39,6 +39,16 @@ var projData = {
             "description": "2023 wood, texture paste, acrylics",
             "title": "isepäi",
             "tags": ["paintings"]
+        },
+                {
+            "cover": "sashami.gif",
+            "type": "artwork",
+            "link": "",
+            "ext_link": "https://sashami.opsti.ee/",
+            "ext_link_text": "visit site...",
+            "description": "design and development",
+            "title": "2024 interactive Tartu map of houses by Sashami",
+            "tags": ["tech"]
         },
         {
             "cover": "funeral.jpg",
