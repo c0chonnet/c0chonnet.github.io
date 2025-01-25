@@ -8,7 +8,7 @@ var projData = {
             "ext_link_text": "play in browser...",
             "description": "visual novel game",
             "title": "2024 the last flower shop in town",
-            "tags": ["bw", "tech", "news"]
+            "tags": ["bw", "digital", "news"]
         }, 
     {
             "cover": "salme.png",
@@ -28,7 +28,7 @@ var projData = {
             "ext_link_text": "",
             "description": "",
             "title": "2024 amsterdam sketchbook",
-            "tags": ["bw", "sketchbooks"]
+            "tags": ["bw"]
         },
 		 {
             "cover": "joecat.jpg",
@@ -38,7 +38,7 @@ var projData = {
             "ext_link_text": "",
             "description": "2023 wood, texture paste, acrylics",
             "title": "isepäi",
-            "tags": ["paintings"]
+            "tags": ["colors"]
         },
                 {
             "cover": "sashami.gif",
@@ -48,7 +48,7 @@ var projData = {
             "ext_link_text": "visit site...",
             "description": "design and development",
             "title": "2024 interactive Tartu map of houses by Sashami",
-            "tags": ["tech"]
+            "tags": ["digital"]
         },
         {
             "cover": "funeral.jpg",
@@ -58,12 +58,12 @@ var projData = {
             "ext_link_text": "",
             "description": "2019 gouache, pastels",
             "title": "peonies",
-            "tags": ["paintings"]
+            "tags": ["colors"]
         },
         {
             "cover": "dnd.jpg",
-            "type": "page",
-            "link": "dnd2224",
+            "type": "artwork",
+            "link": "",
             "ext_link": "",
             "ext_link_text": "",
             "description": "",
@@ -78,7 +78,7 @@ var projData = {
             "ext_link_text": "view on behance...",
             "description": "сover for the book by Sasha Pershina \"Zhabry\" (\"The Gill\")",
             "title": "2023 жабры",
-            "tags": ["paintings"]
+            "tags": ["colors"]
         },
         {
             "cover": "teed.png",
@@ -88,7 +88,7 @@ var projData = {
             "ext_link_text": "view on behance...",
             "description": "",
             "title": "2023 teed - ar exhibition",
-            "tags": ["tech"]
+            "tags": ["digital"]
         },
         {
             "cover": "42.jpg",
@@ -98,7 +98,7 @@ var projData = {
             "ext_link_text": "view on behance...",
             "description": "illustrations and a сover for the book by Aleksandra Lisitsa \"-42\"",
             "title": "2016 -42",
-            "tags": ["paintings"]
+            "tags": ["colors"]
         },
         {
             "cover": "zine.JPG",
@@ -108,7 +108,7 @@ var projData = {
             "ext_link_text": "visit site...",
             "description": "generative images and map art for the zine",
             "title": "2020 zine as an exhibition",
-            "tags": ["tech"]
+            "tags": ["digital", "bw"]
         },
         {
             "cover": "conf.jpg",
@@ -118,7 +118,7 @@ var projData = {
             "ext_link_text": "",
             "description": "2019 gouache, pencils",
             "title": "confluence",
-            "tags": ["paintings"]
+            "tags": ["colors"]
         },
         {
             "cover": "don.jpg",
@@ -128,7 +128,7 @@ var projData = {
             "ext_link_text": "",
             "description": "2013 watercolor, pencils, pens",
             "title": "don",
-            "tags": ["paintings"]
+            "tags": ["colors"]
         }, {
             "cover": "branches.jpg",
             "type": "artwork",
@@ -137,7 +137,7 @@ var projData = {
             "ext_link_text": "",
             "description": "2012 watercolor, pastels, ink",
             "title": "branches",
-            "tags": ["paintings"]
+            "tags": ["colors"]
         }, {
             "cover": "grt.jpg",
             "type": "artwork",
@@ -146,7 +146,7 @@ var projData = {
             "ext_link_text": "",
             "description": "",
             "title": "2013 pskov series",
-            "tags": ["paintings"]
+            "tags": ["colors"]
         },
 		{
             "cover": "trees.jpg",
@@ -156,7 +156,7 @@ var projData = {
             "ext_link_text": "",
             "description": "",
             "title": "2012 gouache, ink",
-            "tags": ["bw", "paintings"]
+            "tags": ["bw"]
         },
 		
 		{
@@ -167,7 +167,7 @@ var projData = {
             "ext_link_text": "",
             "description": "2012 gouache",
             "title": "february",
-            "tags": ["paintings"]
+            "tags": ["colors"]
         }
     ]
 }

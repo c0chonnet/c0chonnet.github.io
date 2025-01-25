@@ -53,13 +53,19 @@ footer {
 
 
 
-#masonry {
+[id^=masonry-] {
     column-gap: 3px;
     column-fill: initial;
     column-width: 200px;
 }
 
-#masonry > * {
+#masonry-news {
+    column-gap: 3px;
+    column-fill: initial;
+    column-width: 400px !important;
+}
+
+[id^=masonry-] > * {
     break-inside: avoid;
 }
 
@@ -70,6 +76,8 @@ footer {
     display: inline-block;
     width: 200px;
 }
+
+p a, p a:hover {color:black;}
 
 
 .tag {
@@ -113,6 +121,8 @@ footer {
     margin-top: 2px;
 }
 
+.tags a, .tags a:hover {color: white}
+
 
 .brick:hover .cover, .brick:active .cover  {
     display: none;
@@ -125,15 +135,6 @@ footer {
 
 .social {
 	width: 3rem;
-}
-
-.vaenaton {
-	background-image:url("media/vntn.png");
-	 background-repeat: no-repeat;
-	 background-size: contain;
-	  background-position-x:95%; 
-	  background-position-y:center; 
-	  background-size: 40px;
 }
 
 .photo {
@@ -160,7 +161,7 @@ nav {
 	max-width: 100%;
 }
 
-#masonry {
+[id^=masonry-] {
         column-width: 100%;
         column-gap: 0;
     }
@@ -170,7 +171,7 @@ nav {
         padding: 0; 
     }
 
-    #masonry > * {
+    [id^=masonry-] > * {
         break-inside: auto; 
     }
 
@@ -178,7 +179,7 @@ nav {
 
 @media only screen and (min-width: 1930px) {
 
-#masonry {
+[id^=masonry-] {
     column-width: 350px;
 
 }

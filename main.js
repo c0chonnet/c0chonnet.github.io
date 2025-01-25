@@ -38,91 +38,117 @@ function unhoverG(g) {
     g.setAttribute('src', '../media/git1.png');
 }
 
-var selectedTag = '';
+if (document.getElementById('aboutme')) {
+const ph = document.getElementById('aboutme');
+function hoverPh(ph) {
+    ph.setAttribute('src', '../media/aboutpic2.png');
+}
+}
 
+function unhoverPh(ph) {
+    ph.setAttribute('src', '../media/aboutpic.png');
+}
 
-document.addEventListener('DOMContentLoaded', function () {
-if (document.getElementById('masonry')) {
+function createBrick(proj) {
+    var col = document.createElement('div');
+    col.className = 'brick';
 
-    document.getElementById('top-menu').addEventListener('click', event => {
-        if (event.target.tagName === 'A' && event.target.hasAttribute('data-tag')) {
-            event.preventDefault();
-            selectedTag = event.target.getAttribute('data-tag');
-            filterAndDisplayProjects();
-        }
-    });
+    var img = document.createElement('img');
+    img.className = 'project-cover';
+    img.src = `../media/projects/${proj.cover}`;
+    col.appendChild(img);
 
-    function createBrick(proj) {
-        var col = document.createElement('div');
-        col.className = 'brick';
+    var descDiv = document.createElement('div');
+    descDiv.className = 'project-description';
 
-        var img = document.createElement('img');
-        img.className = 'project-cover';
-        img.src = `../media/projects/${proj.cover}`;
-        col.appendChild(img);
+    var h2 = document.createElement('h2');
+    h2.innerText = proj.title;
+    descDiv.appendChild(h2);
 
-        var descDiv = document.createElement('div');
-        descDiv.className = 'project-description';
+    if (proj.type === 'artwork') {
+        var desc = document.createElement('p');
+        desc.innerText = proj.description;
+        descDiv.appendChild(desc);
 
-        var h2 = document.createElement('h2');
-        h2.innerText = proj.title;
-        descDiv.appendChild(h2);
-
-        if (proj.type === 'artwork') {
-            var desc = document.createElement('p');
-            desc.innerText = proj.description;
-            descDiv.appendChild(desc);
-
-            if (proj.ext_link) {
-                var p = document.createElement('p');
-                var link = document.createElement('a');
-                link.target = '_blank';
-                link.innerText = proj.ext_link_text;
-                link.className = 'project-link';
-                link.href = proj.ext_link;
-                p.appendChild(link);
-                descDiv.appendChild(p);
-            }
-        }
-
-        if (proj.type === 'page') {
+        if (proj.ext_link) {
             var p = document.createElement('p');
             var link = document.createElement('a');
-            link.innerText = 'open...';
+            link.target = '_blank';
+            link.innerText = proj.ext_link_text;
             link.className = 'project-link';
-            link.href = proj.link;
+            link.href = proj.ext_link;
             p.appendChild(link);
             descDiv.appendChild(p);
         }
-
-        var tags = document.createElement('div');
-        tags.className = 'tags';
-        proj.tags.forEach(tag => {
-            var span = document.createElement('span');
-            span.className = 'tag';
-            span.innerText = tag;
-            tags.appendChild(span);
-            span.addEventListener('click', event => {
-                selectedTag = tag;
-                filterAndDisplayProjects();
-            });
-        });
-        descDiv.appendChild(tags);
-        col.appendChild(descDiv);
-        return col;
     }
 
-    function filterAndDisplayProjects() {
-            var grid = document.getElementById('masonry');
-            var filteredProjects = selectedTag ? projData.projects.filter(proj => proj.tags.includes(selectedTag)) : projData.projects;
-            grid.innerHTML = '';
-            filteredProjects.forEach(proj => {
-                var brick = createBrick(proj);
-                grid.appendChild(brick);
-            });
-
+    if (proj.type === 'page') {
+        var p = document.createElement('p');
+        var link = document.createElement('a');
+        link.innerText = 'open...';
+        link.className = 'project-link';
+        link.href = proj.link;
+        p.appendChild(link);
+        descDiv.appendChild(p);
     }
 
-    filterAndDisplayProjects();
-};
+    var tags = document.createElement('div');
+    tags.className = 'tags';
+    proj.tags.forEach(tag => {
+        var span = document.createElement('span');
+        span.className = 'tag';
+
+        var link = document.createElement('a');
+        link.href = `/${tag}`;
+        link.innerText = tag;
+
+        span.appendChild(link);
+
+        tags.appendChild(span);
+    });
+
+    descDiv.appendChild(tags);
+    col.appendChild(descDiv);
+    return col;
+}
+
+function displayProjects() {
+    var grid = document.querySelector('main > div');
+    var selectedTag = getSelectedTagForGrid(grid);
+    var filteredProjects = selectedTag ? projData.projects.filter(proj => proj.tags.includes(selectedTag)) : projData.projects;
+
+    grid.innerHTML = '';
+    filteredProjects.forEach(proj => {
+        var brick = createBrick(proj);
+        grid.appendChild(brick);
+    });
+}
+
+function getSelectedTagForGrid(grid) {
+    if (grid.id === 'masonry-index') {
+        return null;
+    } else if (grid.id === 'masonry-colors') {
+        return 'colors';
+    } else if (grid.id === 'masonry-bw') {
+        return 'bw';
+    } else if (grid.id === 'masonry-digital') {
+        return 'digital';
+    } else if (grid.id === 'masonry-news') {
+        return 'news';
+    }
+    return null;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (document.getElementById('masonry-index')) {
+        displayProjects();
+    } else if (document.getElementById('masonry-colors')) {
+        displayProjects();
+    } else if (document.getElementById('masonry-bw')) {
+        displayProjects();
+    } else if (document.getElementById('masonry-digital')) {
+        displayProjects();
+    } else if (document.getElementById('masonry-news')) {
+        displayProjects();
+    }
 });
