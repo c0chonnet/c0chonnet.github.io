@@ -38,16 +38,6 @@ function unhoverG(g) {
     g.setAttribute('src', '../media/git1.png');
 }
 
-if (document.getElementById('aboutme')) {
-const ph = document.getElementById('aboutme');
-function hoverPh(ph) {
-    ph.setAttribute('src', '../media/aboutpic2.png');
-}
-}
-
-function unhoverPh(ph) {
-    ph.setAttribute('src', '../media/aboutpic.png');
-}
 
 function createBrick(proj) {
     var col = document.createElement('div');
