@@ -121,7 +121,7 @@ p a, p a:hover {color:black;}
     margin-top: 2px;
 }
 
-.tags a, .tags a:hover {color: white}
+.tags a, .tags a:hover, .brick a, .brick a:hover {color: white}
 
 
 .brick:hover .cover, .brick:active .cover  {
