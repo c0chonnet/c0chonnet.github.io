@@ -38,6 +38,80 @@ function unhoverG(g) {
     g.setAttribute('src', '../media/git1.png');
 }
 
+function createPopup(type, popup) { 
+    var pu = document.createElement('div');
+
+    if (type === "popup") {
+        pu.className = 'popup';
+        var row = document.createElement('div');
+        row.className = 'row';
+
+        var leftCol = document.createElement('div');
+        leftCol.className = 'col';
+        leftCol.innerHTML = popup.content;
+
+        var rightCol = document.createElement('div');
+        rightCol.className = 'col';
+
+        var img = document.createElement('img');
+        img.src = `../media/projects/${popup.cover}`;
+        img.className = 'popup-cover';
+        rightCol.appendChild(img);
+
+        row.appendChild(leftCol);
+        row.appendChild(rightCol);
+
+        pu.appendChild(row);
+    }
+
+    if (type === "full") {
+        pu.className = 'popup-full';
+        var img = document.createElement('img');
+        img.className = 'full';
+        img.src = `../media/projects/${popup.cover}`;
+        pu.appendChild(img);
+
+        var aspectRatio = img.width / img.height;
+        var isVertical = aspectRatio < 1; 
+    
+        var maxWidth = 0.7 * window.innerWidth;
+        var maxHeight = 0.7 * window.innerHeight;
+        
+        var popupWidth, popupHeight;
+        
+        popupHeight = Math.min(maxHeight, img.height);
+        popupWidth = popupHeight * aspectRatio;
+        
+
+        pu.style.width = popupWidth + 'px';
+        pu.style.height = popupHeight + 'px';
+                
+};
+
+
+    document.body.appendChild(pu);
+
+    function handleOutsideClick(event) {
+
+        setTimeout(function() {
+            if (!pu.contains(event.target)) {
+                pu.remove();  
+                document.removeEventListener('click', handleOutsideClick); 
+            }
+        }, 400); 
+    }
+
+
+    setTimeout(function() {
+        document.addEventListener('click', handleOutsideClick);
+    }, 100);  
+
+
+    pu.addEventListener('click', function(event) {
+        event.stopImmediatePropagation(); 
+    });
+
+};
 
 function createBrick(proj) {
     var col = document.createElement('div');
@@ -55,7 +129,7 @@ function createBrick(proj) {
     h2.innerText = proj.title;
     descDiv.appendChild(h2);
 
-    if (proj.type === 'artwork') {
+    if (proj.type === 'ext') {
         var desc = document.createElement('p');
         desc.innerText = proj.description;
         descDiv.appendChild(desc);
@@ -64,7 +138,7 @@ function createBrick(proj) {
             var p = document.createElement('p');
             var link = document.createElement('a');
             link.target = '_blank';
-            link.innerText = proj.ext_link_text;
+            link.innerText = '↗ ' + proj.ext_link_text;
             link.className = 'project-link';
             link.href = proj.ext_link;
             p.appendChild(link);
@@ -72,14 +146,34 @@ function createBrick(proj) {
         }
     }
 
-    if (proj.type === 'page') {
+    if (proj.type === 'full') {
         var p = document.createElement('p');
+        p.innerText = proj.description;
         var link = document.createElement('a');
         link.innerText = 'open...';
+        link.href = "#";
         link.className = 'project-link';
-        link.href = proj.link;
-        p.appendChild(link);
+        link.onclick = function(event) {
+        event.preventDefault(); 
+        createPopup('full', proj.popup); 
+        };
         descDiv.appendChild(p);
+        descDiv.appendChild(link);
+    }
+
+     if (proj.type === 'popup') {
+        var p = document.createElement('p');
+        p.innerText = proj.description;
+        var link = document.createElement('a');
+        link.innerText = 'open...';
+        link.href = "#";
+        link.className = 'project-link';
+        link.onclick = function(event) {
+        event.preventDefault(); 
+        createPopup('popup', proj.popup); 
+        };
+        descDiv.appendChild(p);
+        descDiv.appendChild(link);
     }
 
     var tags = document.createElement('div');
@@ -101,6 +195,7 @@ function createBrick(proj) {
     col.appendChild(descDiv);
     return col;
 }
+
 
 function displayProjects() {
     var grid = document.querySelector('main > div');

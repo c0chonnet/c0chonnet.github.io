@@ -1,8 +1,8 @@
 var projData = {
     "projects":
     [{
-            "cover": "tlfsit.gif",
-            "type": "artwork",
+            "cover": "tlfs.png",
+            "type": "ext",
             "link": "",
             "ext_link": "https://vaenaton.itch.io/the-last-flower-shop-in-town",
             "ext_link_text": "play in browser...",
@@ -10,39 +10,55 @@ var projData = {
             "title": "2024 the last flower shop in town",
             "tags": ["bw", "digital", "news"]
         }, 
+
     {
             "cover": "salme.png",
-            "type": "artwork",
+            "type": "full",
             "link": "",
             "ext_link": "",
             "ext_link_text": "",
             "description": "November 2024, Tallinn, Salme kultuurikeskus",
             "title": "2024 Drink and Draw exhibition",
-            "tags": ["bw", "news"]
+            "tags": ["news"],
+            "popup": 
+            {
+                "cover" : "salme.png"
+            }
         }, 
+
         {
             "cover": "ams.jpg",
-            "type": "artwork",
+            "type": "full",
             "link": "",
             "ext_link": "",
             "ext_link_text": "",
             "description": "",
             "title": "2024 amsterdam sketchbook",
-            "tags": ["bw"]
+            "tags": ["bw"],
+            "popup": 
+            {
+                "content" : "<h2></h2><br><p></p>",
+                "cover" : "ams.jpg"
+            }
         },
 		 {
             "cover": "joecat.jpg",
-            "type": "artwork",
+            "type": "full",
             "link": "",
             "ext_link": "",
             "ext_link_text": "",
             "description": "2023 wood, texture paste, acrylics",
             "title": "isepäi",
-            "tags": ["colors"]
+            "tags": ["colors"],
+            "popup": 
+            {
+                "content" : "<h2></h2><br><p></p>",
+                "cover" : "joecat.jpg"
+            }
         },
                 {
             "cover": "sashami.gif",
-            "type": "artwork",
+            "type": "ext",
             "link": "",
             "ext_link": "https://sashami.opsti.ee/",
             "ext_link_text": "visit site...",
@@ -52,27 +68,37 @@ var projData = {
         },
         {
             "cover": "funeral.jpg",
-            "type": "artwork",
+            "type": "full",
             "link": "",
             "ext_link": "",
             "ext_link_text": "",
             "description": "2019 gouache, pastels",
             "title": "peonies",
-            "tags": ["colors"]
+            "tags": ["colors"],
+            "popup": 
+            {
+                "content" : "<h2></h2><br><p></p>",
+                "cover" : "funeral.jpg"
+            }
         },
         {
             "cover": "dnd.jpg",
-            "type": "artwork",
+            "type": "full",
             "link": "",
             "ext_link": "",
             "ext_link_text": "",
             "description": "",
-            "title": "2022-2024 ink nude sketches",
-            "tags": ["bw"]
+            "title": "2023 nude sketches",
+            "tags": ["bw"],
+            "popup": 
+            {
+                
+                "cover" : "dndcol.jpg"
+            }
         },
         {
             "cover": "gill.jpg",
-            "type": "artwork",
+            "type": "ext",
             "link": "",
             "ext_link": "https://www.behance.net/gallery/182655403/ZHABRY-2023",
             "ext_link_text": "view on behance...",
@@ -82,7 +108,7 @@ var projData = {
         },
         {
             "cover": "teed.png",
-            "type": "artwork",
+            "type": "ext",
             "link": "",
             "ext_link": "https://www.behance.net/gallery/194313447/TEED-AR-EXHIBITION-2023",
             "ext_link_text": "view on behance...",
@@ -92,7 +118,7 @@ var projData = {
         },
         {
             "cover": "42.jpg",
-            "type": "artwork",
+            "type": "ext",
             "link": "",
             "ext_link": "https://www.behance.net/gallery/47545333/ALEKSANDRA-LISITSA-42-2016",
             "ext_link_text": "view on behance...",
@@ -102,7 +128,7 @@ var projData = {
         },
         {
             "cover": "zine.JPG",
-            "type": "artwork",
+            "type": "ext",
             "link": "",
             "ext_link": "https://eng.curatorialforum.art/zine_as_an_exhibition",
             "ext_link_text": "visit site...",
@@ -112,62 +138,87 @@ var projData = {
         },
         {
             "cover": "conf.jpg",
-            "type": "artwork",
+            "type": "full",
             "link": "",
             "ext_link": "",
             "ext_link_text": "",
             "description": "2019 gouache, pencils",
             "title": "confluence",
-            "tags": ["colors"]
+            "tags": ["colors"],
+            "popup": 
+            {
+                "cover" : "conf.jpg"
+            }
         },
         {
             "cover": "don.jpg",
-            "type": "artwork",
+            "type": "full",
             "link": "",
             "ext_link": "",
             "ext_link_text": "",
             "description": "2013 watercolor, pencils, pens",
             "title": "don",
-            "tags": ["colors"]
+            "tags": ["colors"],
+            "popup": 
+            {
+                "cover" : "don.jpg"
+            }
+
         }, {
             "cover": "branches.jpg",
-            "type": "artwork",
+            "type": "full",
             "link": "",
             "ext_link": "",
             "ext_link_text": "",
             "description": "2012 watercolor, pastels, ink",
             "title": "branches",
-            "tags": ["colors"]
+            "tags": ["colors"],
+            "popup": 
+            {
+                "cover" : "branches.jpg"
+            }
         }, {
             "cover": "grt.jpg",
-            "type": "artwork",
+            "type": "full",
             "link": "",
             "ext_link": "",
             "ext_link_text": "",
             "description": "",
             "title": "2013 pskov series",
-            "tags": ["colors"]
+            "tags": ["colors"],
+            "popup": 
+            {
+                "cover" : "grt.jpg"
+            }
         },
 		{
             "cover": "trees.jpg",
-            "type": "artwork",
+            "type": "full",
             "link": "",
             "ext_link": "",
             "ext_link_text": "",
             "description": "",
             "title": "2012 gouache, ink",
-            "tags": ["bw"]
+            "tags": ["bw"],
+            "popup": 
+            {
+                "cover" : "trees.jpg"
+            }
         },
 		
 		{
             "cover": "feb.jpg",
-            "type": "artwork",
+            "type": "full",
             "link": "",
             "ext_link": "",
             "ext_link_text": "",
             "description": "2012 gouache",
             "title": "february",
-            "tags": ["colors"]
+            "tags": ["colors"],
+            "popup": 
+            {
+                "cover" : "feb.jpg"
+            }
         }
     ]
 }

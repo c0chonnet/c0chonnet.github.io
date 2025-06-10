@@ -11,11 +11,11 @@
 
 body {
 	 font-family: "Courier", monospace;
-	 font-size: 14px;
+	 font-size: 16px;
                                                 
 }
 
-h2 {font-size: 18px;
+h2 {font-size: 19px;
 }
 
 
@@ -24,7 +24,7 @@ nav {
 }
 
 main {
-	margin: 60px 150px;
+	margin: 60px 170px;
 }
 
 footer {
@@ -54,15 +54,15 @@ footer {
 
 
 [id^=masonry-] {
-    column-gap: 3px;
+    column-gap: 5px;
     column-fill: initial;
-    column-width: 200px;
+    column-width: 250px;
 }
 
 #masonry-news {
-    column-gap: 3px;
+    column-gap: 6px;
     column-fill: initial;
-    column-width: 400px !important;
+    column-width: 300px !important;
 }
 
 [id^=masonry-] > * {
@@ -74,7 +74,7 @@ footer {
 	position: relative;
     position: relative;
     display: inline-block;
-    width: 200px;
+    width: 100%;
 }
 
 p a, p a:hover {color:black;}
@@ -99,7 +99,7 @@ p a, p a:hover {color:black;}
 }
 
 .project-description {
-     position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -118,7 +118,7 @@ p a, p a:hover {color:black;}
 .project-description .tags {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2px;
+    margin-top: 10px;
 }
 
 .tags a, .tags a:hover, .brick a, .brick a:hover {color: white}
@@ -145,13 +145,62 @@ p a, p a:hover {color:black;}
 	margin-bottom: 10px;
 }
 
+.popup, .popup-full {
+
+    z-index: 2000;
+    background-color: white;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+    max-width: calc(100vw - 30vw);  
+    max-height: calc(100vh - 30vh);
+
+}
+
+.popup .row >:first-child {
+    
+    overflow: hidden;          
+    max-width: 100%;         
+    max-height: 100%;
+    padding:20px; 
+}
+
+.popup-cover {
+
+    height: 100%;
+    object-fit: cover;
+}
+
+.full {
+
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
 @media only screen and (max-width: 600px) {
   main {
 	margin: 170px 40px;
 }
 
 nav {
-	font-size: 10px;
+	font-size: 12px;
+}
+
+.popup {
+
+    width: calc(100vw - 70px);  
+    height: calc(100vh - 70px);
+}
+
+.nav a,
+.nav .brand {
+  padding: 0.5rem 1rem;
 }
 
 .banner {
@@ -183,6 +232,13 @@ nav {
     column-width: 350px;
 
 }
+
+.popup {
+
+    width: calc(100vw - 140px);  
+    height: calc(100vh - 140px);
+}
+
 
   main {
 	margin: 150px 200px;
