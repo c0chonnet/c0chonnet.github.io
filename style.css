@@ -59,7 +59,7 @@ footer {
     column-width: 250px;
 }
 
-#masonry-news {
+#masonry-news, #masonry-digital {
     column-gap: 6px;
     column-fill: initial;
     column-width: 300px !important;
@@ -148,7 +148,6 @@ p a, p a:hover {color:black;}
 .popup, .popup-full {
 
     z-index: 2000;
-    background-color: white;
     position: fixed; 
     top: 50%; 
     left: 50%; 
@@ -192,10 +191,9 @@ nav {
 	font-size: 12px;
 }
 
-.popup {
+.popup , .popup-full {
 
-    width: calc(100vw - 70px);  
-    height: calc(100vh - 70px);
+    max-width: calc(100vw - 70px);  
 }
 
 .nav a,

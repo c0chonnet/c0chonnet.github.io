@@ -237,3 +237,15 @@ document.addEventListener('DOMContentLoaded', function () {
         displayProjects();
     }
 });
+
+
+const container = document.getElementById('masonry-index');
+let loading = false;
+
+container.addEventListener('scroll', () => {
+  if (!loading && container.scrollTop + container.clientHeight >= container.scrollHeight - 100) {
+    loading = true;
+
+    fetchMoreContent().then(() => { loading = false; });
+  }
+});

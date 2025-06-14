@@ -1,6 +1,21 @@
 var projData = {
     "projects":
     [{
+            "cover": "cs.jpg",
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "May 2025, solo textile art exhibition in Tartu",
+            "title": "2025 curvesurfing",
+            "tags": ["bw", "news"],
+            "popup": 
+            {
+                "cover" : "cs.jpg"
+            }
+        }, 
+
+        {
             "cover": "tlfs.png",
             "type": "ext",
             "link": "",
@@ -38,7 +53,7 @@ var projData = {
             "popup": 
             {
                 "content" : "<h2></h2><br><p></p>",
-                "cover" : "ams.jpg"
+                "cover" : "ams.gif"
             }
         },
 		 {
@@ -87,25 +102,32 @@ var projData = {
             "link": "",
             "ext_link": "",
             "ext_link_text": "",
-            "description": "",
-            "title": "2023 nude sketches",
+            "description": "2023 ink",
+            "title": "lying model",
             "tags": ["bw"],
             "popup": 
             {
                 
-                "cover" : "dndcol.jpg"
+                "cover" : "dnd.jpg"
             }
         },
+
         {
-            "cover": "gill.jpg",
-            "type": "ext",
+            "cover": "kalevist.jpg",
+            "type": "full",
             "link": "",
-            "ext_link": "https://www.behance.net/gallery/182655403/ZHABRY-2023",
-            "ext_link_text": "view on behance...",
-            "description": "сover for the book by Sasha Pershina \"Zhabry\" (\"The Gill\")",
-            "title": "2023 жабры",
-            "tags": ["colors"]
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "2023 ink, collage",
+            "title": "kalevi street",
+            "tags": ["bw"],
+            "popup": 
+            {
+                
+                "cover" : "kalevist.jpg"
+            }
         },
+
         {
             "cover": "teed.png",
             "type": "ext",
@@ -134,7 +156,7 @@ var projData = {
             "ext_link_text": "visit site...",
             "description": "generative images and map art for the zine",
             "title": "2020 zine as an exhibition",
-            "tags": ["digital", "bw"]
+            "tags": ["digital"]
         },
         {
             "cover": "conf.jpg",
@@ -150,6 +172,22 @@ var projData = {
                 "cover" : "conf.jpg"
             }
         },
+
+                {
+            "cover": "polina.jpg",
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "2023 watercolor, ink",
+            "title": "polina",
+            "tags": ["bw"],
+            "popup": 
+            {
+                "cover" : "polina.jpg"
+            }
+        },
+
         {
             "cover": "don.jpg",
             "type": "full",
