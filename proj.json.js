@@ -1,6 +1,22 @@
 var projData = {
     "projects":
-    [{
+    [   {
+            "cover": "dndbeer.gif",
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "Tuletorn х Drink and Draw beer",
+            "title": "2025 arte et labore",
+            "tags": ["bw", "news"],
+            "popup": 
+            {
+                "cover" : "dndbeer.gif"
+            }
+        }, 
+
+
+        {
             "cover": "cs.jpg",
             "type": "full",
             "link": "",
