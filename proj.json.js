@@ -1,6 +1,22 @@
 var projData = {
     "projects":
     [   {
+            "cover": "pcover.jpg",
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "ink, Procreate",
+            "title": "2025 pskov churches",
+            "tags": ["bw"],
+            "popup": 
+            {
+                "cover" : "pbw25.jpg"
+            }
+        }, 
+
+
+        {
             "cover": "dndbeer.gif",
             "type": "full",
             "link": "",
@@ -12,6 +28,21 @@ var projData = {
             "popup": 
             {
                 "cover" : "dndbeer.gif"
+            }
+        }, 
+
+        {
+            "cover": "ccover.jpg",
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "Procreate",
+            "title": "2025 nataly",
+            "tags": ["bw"],
+            "popup": 
+            {
+                "cover" : "crystalcrowbar.jpg"
             }
         }, 
 
@@ -154,6 +185,24 @@ var projData = {
             "title": "2023 teed - ar exhibition",
             "tags": ["digital"]
         },
+
+
+        {
+            "cover": "pe.jpg",
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "2018 wax",
+            "title": "peonies",
+            "tags": ["colors"],
+            "popup": 
+            {
+                "content" : "<h2></h2><br><p></p>",
+                "cover" : "pef.jpg"
+            }
+        },
+
         {
             "cover": "42.jpg",
             "type": "ext",
