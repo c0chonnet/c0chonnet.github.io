@@ -1,6 +1,6 @@
 var projData = {
     "projects":
-    [   {
+    [    {
             "cover": "pcover.jpg",
             "type": "full",
             "link": "",
@@ -16,6 +16,37 @@ var projData = {
         }, 
 
 
+        {
+            "cover": "gerle.jpg",
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "2025 gouache, pencils",
+            "title": "gerle",
+            "tags": ["colors"],
+            "popup": 
+            {
+                "cover" : "gerle.jpg"
+            }
+        }, 
+
+        {
+            "cover": "sbflw.png",
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "2025 gouache, pencils",
+            "title": "sketchbook flowers",
+            "tags": ["colors"],
+            "popup": 
+            {
+                "cover" : "sbflwf.png"
+            }
+        }, 
+
+    
         {
             "cover": "dndbeer.gif",
             "type": "full",
@@ -62,6 +93,7 @@ var projData = {
             }
         }, 
 
+
         {
             "cover": "tlfs.png",
             "type": "ext",
@@ -72,6 +104,7 @@ var projData = {
             "title": "2024 the last flower shop in town",
             "tags": ["bw", "digital", "news"]
         }, 
+
 
     {
             "cover": "salme.png",
@@ -88,6 +121,8 @@ var projData = {
             }
         }, 
 
+        
+
         {
             "cover": "ams.jpg",
             "type": "full",
@@ -103,6 +138,33 @@ var projData = {
                 "cover" : "ams.gif"
             }
         },
+
+          {
+            "cover": "ch.jpg",
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "2022 gouache, pencils",
+            "title": "children in vests",
+            "tags": ["colors"],
+            "popup": 
+            {
+                "cover" : "chf.jpg"
+            }
+        },
+
+           {
+            "cover": "dsc.png",
+            "type": "ext",
+            "link": "",
+            "ext_link": "https://www.behance.net/gallery/154422489/DIANKINY-SKAZKI-2022",
+            "ext_link_text": "view on behance...",
+            "description": "illustrations and a сover for the book by Diana Konstantinova \"Diankiny Skazki\"",
+            "title": "2022 Diankiny Skazki",
+            "tags": ["bw"]
+        },
+
 		 {
             "cover": "joecat.jpg",
             "type": "full",
@@ -143,6 +205,10 @@ var projData = {
                 "cover" : "funeral.jpg"
             }
         },
+
+
+     
+
         {
             "cover": "dnd.jpg",
             "type": "full",
@@ -159,6 +225,8 @@ var projData = {
             }
         },
 
+  
+
         {
             "cover": "kalevist.jpg",
             "type": "full",
@@ -172,6 +240,22 @@ var projData = {
             {
                 
                 "cover" : "kalevist.jpg"
+            }
+        },
+
+               {
+            "cover": "fos.jpg",
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "2014 gouache",
+            "title": "flowers on snow",
+            "tags": ["colors"],
+            "popup": 
+            {
+                
+                "cover" : "fos.jpg"
             }
         },
 
@@ -223,6 +307,22 @@ var projData = {
             "title": "2020 zine as an exhibition",
             "tags": ["digital"]
         },
+
+         {
+            "cover": "spb.jpg",
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "2018 gouache, ink",
+            "title": "kronstadt",
+            "tags": ["bw"],
+            "popup": 
+            {
+                "cover" : "spb.jpg"
+            }
+        },
+
         {
             "cover": "conf.jpg",
             "type": "full",
