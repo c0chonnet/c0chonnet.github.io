@@ -56,8 +56,8 @@ var projData = {
             "link": "/selfportraits",
             "ext_link": "",
             "ext_link_text": "read more",
-            "description": "15 years of selfportraits",
-            "title": "selfportraits",
+            "description": "15 years of self portraits",
+            "title": "self portraits",
             "date": "August 2026",
             "tags": [
                 "colors",
@@ -90,7 +90,7 @@ var projData = {
             "ext_link": "",
             "ext_link_text": "",
             "description": "ink, procreate",
-            "title": "selfportrait",
+            "title": "self portrait",
             "date": "2026",
             "tags": [
                 "bw"
