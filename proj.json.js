@@ -3,7 +3,7 @@ var projData = {
         {
             "cover": "allns.jpg",
             "blog_cover": "allns.jpg",
-            "show_on_main": false,
+            "show_on_main": true,
             "type": "full",
             "link": "",
             "ext_link": "",
@@ -19,7 +19,7 @@ var projData = {
         {
             "cover": "chlg261.JPG",
             "blog_cover": "chlg261.JPG",
-            "show_on_main": true,
+            "show_on_main": false,
             "type": "full",
             "link": "",
             "ext_link": "",
@@ -33,9 +33,58 @@ var projData = {
             "slug": "morning-2026"
         },
         {
+            "cover": "gm26.jpg",
+            "blog_cover": "gm26.jpg",
+            "show_on_main": true,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "ink, procreate",
+            "title": "grandmother",
+            "date": "2026",
+            "tags": [
+                "bw"
+            ],
+            "slug": "grandmother-2026"
+        },
+        {
+            "cover": "me19.jpg",
+            "blog_cover": "spblog.jpg",
+            "show_on_main": true,
+            "type": "full",
+            "link": "/selfportraits",
+            "ext_link": "",
+            "ext_link_text": "read more",
+            "description": "15 years of selfportraits",
+            "title": "selfportraits",
+            "date": "August 2026",
+            "tags": [
+                "colors",
+                "gallery"
+            ],
+            "slug": "selfportraits-2019"
+        },
+        {
+            "cover": "stillustration challenge.png",
+            "blog_cover": "stillustration challenge.png",
+            "show_on_main": false,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "gouache, procreate",
+            "title": "stillustration challenge",
+            "date": "2026",
+            "tags": [
+                "colors"
+            ],
+            "slug": "stillustration-challenge-2026"
+        },
+        {
             "cover": "me26.jpg",
             "blog_cover": "me26.jpg",
-            "show_on_main": true,
+            "show_on_main": false,
             "type": "full",
             "link": "",
             "ext_link": "",
@@ -47,6 +96,22 @@ var projData = {
                 "bw"
             ],
             "slug": "selfportrait-2026"
+        },
+        {
+            "cover": "karlova.png",
+            "blog_cover": "karlova.png",
+            "show_on_main": true,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "acrylics, pastels, procreate",
+            "title": "karlova",
+            "date": "2026",
+            "tags": [
+                "colors"
+            ],
+            "slug": "karlova-2026"
         },
         {
             "cover": "pcover.jpg",
@@ -97,6 +162,22 @@ var projData = {
             "slug": "riga-2026"
         },
         {
+            "cover": "botanica collective.png",
+            "blog_cover": "botanica collective.png",
+            "show_on_main": false,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "gouache, procreate",
+            "title": "botanica collective",
+            "date": "2026",
+            "tags": [
+                "colors"
+            ],
+            "slug": "botanica-collective-2026"
+        },
+        {
             "cover": "gerle.jpg",
             "blog_cover": "gerle.jpg",
             "show_on_main": true,
@@ -127,22 +208,6 @@ var projData = {
                 "bw"
             ],
             "slug": "anna-and-vanessa-2024"
-        },
-        {
-            "cover": "gm26.jpg",
-            "blog_cover": "gm26.jpg",
-            "show_on_main": true,
-            "type": "full",
-            "link": "",
-            "ext_link": "",
-            "ext_link_text": "",
-            "description": "ink, procreate",
-            "title": "grandmother",
-            "date": "2026",
-            "tags": [
-                "bw"
-            ],
-            "slug": "grandmother-2026"
         },
         {
             "cover": "stm.jpg",
@@ -242,6 +307,22 @@ var projData = {
             "slug": "curvesurfing-exhibition-2025"
         },
         {
+            "cover": "church tour fragment.png",
+            "blog_cover": "church tour fragment.png",
+            "show_on_main": true,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "acrylics",
+            "title": "church tour (fragment)",
+            "date": "2024",
+            "tags": [
+                "colors"
+            ],
+            "slug": "church-tour-fragment-2024"
+        },
+        {
             "cover": "wreck.png",
             "blog_cover": "wreck.png",
             "show_on_main": true,
@@ -304,8 +385,8 @@ var projData = {
             "date": "March 2024",
             "tags": [
                 "bw",
-                "blog",
-                "sketchbook"
+                "sketchbook",
+                "gallery"
             ],
             "slug": "amsterdam-sketchbook-2024"
         },
@@ -358,6 +439,22 @@ var projData = {
             "slug": "isepai-2023"
         },
         {
+            "cover": "midsummer bonfire.png",
+            "blog_cover": "midsummer bonfire.png",
+            "show_on_main": true,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "gouache, pencils",
+            "title": "midsummer bonfire",
+            "date": "2022",
+            "tags": [
+                "colors"
+            ],
+            "slug": "midsummer-bonfire-2022"
+        },
+        {
             "cover": "sashami.png",
             "blog_cover": "sashami.png",
             "show_on_main": false,
@@ -374,6 +471,20 @@ var projData = {
             "slug": "interactive-tartu-map-of-houses-by-sashami-2024"
         },
         {
+            "cover": "2024-sketchbook.jpeg",
+            "blog_cover": "2024-sketchbook.jpeg",
+            "show_on_main": false,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "",
+            "title": "2024 sketchbook",
+            "date": "2024",
+            "tags": [],
+            "slug": "2024-sketchbook"
+        },
+        {
             "cover": "funeral.jpg",
             "blog_cover": "funeral.jpg",
             "show_on_main": true,
@@ -382,12 +493,12 @@ var projData = {
             "ext_link": "",
             "ext_link_text": "",
             "description": "gouache, pastels",
-            "title": "peonies",
+            "title": "white peonies",
             "date": "2019",
             "tags": [
                 "colors"
             ],
-            "slug": "peonies-2019"
+            "slug": "white-peonies-2019"
         },
         {
             "cover": "dnd.jpg",
@@ -404,6 +515,38 @@ var projData = {
                 "bw"
             ],
             "slug": "lying-model-2023"
+        },
+        {
+            "cover": "modern museum.png",
+            "blog_cover": "modern museum.png",
+            "show_on_main": true,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "ink",
+            "title": "modern museum",
+            "date": "2023",
+            "tags": [
+                "bw"
+            ],
+            "slug": "modern-museum-2023"
+        },
+        {
+            "cover": "hps.png",
+            "blog_cover": "hps.png",
+            "show_on_main": true,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "collage, ink",
+            "title": "hps haapsalu",
+            "date": "2023",
+            "tags": [
+                "bw"
+            ],
+            "slug": "hps-haapsalu-2023"
         },
         {
             "cover": "kalevist.jpg",
@@ -456,7 +599,7 @@ var projData = {
         {
             "cover": "onnetn.jpg",
             "blog_cover": "onnetn.jpg",
-            "show_on_main": true,
+            "show_on_main": false,
             "type": "full",
             "link": "",
             "ext_link": "",
@@ -486,6 +629,20 @@ var projData = {
             "slug": "flowers-on-snow-2014"
         },
         {
+            "cover": "trt-sketchbook.jpeg",
+            "blog_cover": "trt-sketchbook.jpeg",
+            "show_on_main": false,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "",
+            "title": "trt sketchbook",
+            "date": "",
+            "tags": [],
+            "slug": "trt-sketchbook"
+        },
+        {
             "cover": "teed.png",
             "blog_cover": "teed.png",
             "show_on_main": false,
@@ -500,6 +657,20 @@ var projData = {
                 "digital"
             ],
             "slug": "teed-ar-exhibition-2023"
+        },
+        {
+            "cover": "2023-sketchbook.jpeg",
+            "blog_cover": "2023-sketchbook.jpeg",
+            "show_on_main": false,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "",
+            "title": "2023 sketchbook",
+            "date": "2023",
+            "tags": [],
+            "slug": "2023-sketchbook"
         },
         {
             "cover": "pe.jpg",
@@ -548,6 +719,20 @@ var projData = {
                 "colors"
             ],
             "slug": "42-2016"
+        },
+        {
+            "cover": "2019-sketchbook.jpeg",
+            "blog_cover": "2019-sketchbook.jpeg",
+            "show_on_main": false,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "",
+            "title": "2019 sketchbook",
+            "date": "2019",
+            "tags": [],
+            "slug": "2019-sketchbook"
         },
         {
             "cover": "zine.JPG",
@@ -647,17 +832,18 @@ var projData = {
         },
         {
             "cover": "grt.jpg",
-            "blog_cover": "grt.jpg",
+            "blog_cover": "pskov-series.png",
             "show_on_main": true,
             "type": "full",
-            "link": "",
+            "link": "/pskov-series",
             "ext_link": "",
-            "ext_link_text": "",
-            "description": "",
+            "ext_link_text": "read more",
+            "description": "a small naive series about holidays in hometown",
             "title": "pskov series",
-            "date": "2013",
+            "date": "May 2013",
             "tags": [
-                "colors"
+                "colors",
+                "gallery"
             ],
             "slug": "pskov-series-2013"
         },

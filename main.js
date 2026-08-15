@@ -104,11 +104,18 @@ function createBrick(proj, useBlogCover) {
         var span = document.createElement('span');
         span.className = 'tag';
 
-        if (tag === 'sketchbook') {
+        if (useBlogCover) {
+            // blog page: tags are filter pills
+            span.className = 'tag filter-inline';
             span.innerText = tag;
+            span.classList.toggle('active', activeBlogFilters.has(tag));
+            span.addEventListener('click', function () {
+                toggleBlogFilter(tag);
+            });
         } else {
+            // portfolio pages: tags are navigation links
             var link = document.createElement('a');
-            link.href = (tag === 'news' || tag === 'blog' || tag === 'digital') ? '/blog' : `/${tag}`;
+            link.href = (tag === 'bw' || tag === 'colors') ? '/' + tag : '/blog';
             link.innerText = tag;
             span.appendChild(link);
         }
@@ -122,13 +129,50 @@ function createBrick(proj, useBlogCover) {
 }
 
 
+var activeBlogFilters = new Set();
+
+var BLOG_TAGS = ['news', 'blog', 'digital', 'gallery', 'sketchbook'];
+
+function toggleBlogFilter(tag) {
+    if (activeBlogFilters.has(tag)) {
+        activeBlogFilters.delete(tag);
+    } else {
+        activeBlogFilters.add(tag);
+    }
+    // sync active state on all matching pills (top menu + inline card tags)
+    var pills = document.querySelectorAll('.filter-pill, .filter-inline');
+    pills.forEach(function (p) {
+        if (p.innerText === tag) {
+            p.classList.toggle('active', activeBlogFilters.has(tag));
+        }
+    });
+    displayProjects();
+}
+
+function getBlogTags() {
+    var tags = new Set();
+    projData.projects.forEach(function (proj) {
+        if (BLOG_TAGS.some(function (t) { return proj.tags.includes(t); })) {
+            proj.tags.forEach(function (t) {
+                if (t !== 'bw' && t !== 'colors') tags.add(t);
+            });
+        }
+    });
+    return Array.from(tags);
+}
+
 function displayProjects() {
-    var grid = document.querySelector('main > div');
+    var grid = document.getElementById('masonry-index') || document.getElementById('masonry-colors') || document.getElementById('masonry-bw') || document.getElementById('masonry-blog');
     var selectedTag = getSelectedTagForGrid(grid);
     var filteredProjects = projData.projects;
     if (selectedTag) {
         var tags = Array.isArray(selectedTag) ? selectedTag : [selectedTag];
         filteredProjects = filteredProjects.filter(proj => tags.some(tag => proj.tags.includes(tag)));
+    }
+    if (grid.id === 'masonry-blog' && activeBlogFilters.size > 0) {
+        filteredProjects = filteredProjects.filter(proj =>
+            proj.tags.some(function (t) { return activeBlogFilters.has(t); })
+        );
     }
     if (grid.id === 'masonry-index') {
         filteredProjects = filteredProjects.filter(proj => proj.show_on_main);
@@ -150,7 +194,7 @@ function getSelectedTagForGrid(grid) {
     } else if (grid.id === 'masonry-bw') {
         return 'bw';
     } else if (grid.id === 'masonry-blog') {
-        return ['news', 'blog', 'digital'];
+        return BLOG_TAGS;
     }
     return null;
 }
@@ -182,8 +226,26 @@ function closePrivacy(event) {
     if (popup) popup.classList.remove('show');
 }
 
+function buildBlogFilters() {
+    var container = document.getElementById('blog-filters');
+    if (!container) return;
+    getBlogTags().forEach(function (filter) {
+        var pill = document.createElement('a');
+        pill.className = 'filter-pill';
+        pill.innerText = filter;
+        pill.href = '#';
+        pill.addEventListener('click', function (e) {
+            e.preventDefault();
+            toggleBlogFilter(filter);
+        });
+        container.appendChild(pill);
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.slider').forEach(initSlider);
+
+    buildBlogFilters();
 
     if (document.getElementById('masonry-index')) {
         displayProjects();

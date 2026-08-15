@@ -157,6 +157,22 @@ footer {
     }
 }
 
+/* /main, /colors, /bw: match blog masonry — 2 per row on mobile & tablet */
+@media screen and (max-width: 899px) {
+    #masonry-index,
+    #masonry-colors,
+    #masonry-bw {
+        column-width: auto;
+        column-count: 2;
+        column-gap: 5px;
+    }
+    #masonry-index > *,
+    #masonry-colors > *,
+    #masonry-bw > * {
+        break-inside: avoid;
+    }
+}
+
 #masonry-blog .project-cover {
     width: 100%;
     aspect-ratio: 3 / 2;
@@ -191,6 +207,11 @@ p a, p a:hover {color:black;}
     font-size: 1rem;
     opacity: 0.7;
     margin-top: 6px;
+}
+
+#masonry-blog .project-date {
+    font-size: 0.9rem;
+    margin-top: 0.1em;
 }
 
 .project-link {
@@ -249,13 +270,35 @@ p a, p a:hover {color:black;}
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 0.5em 0;
+    padding: 0.25em 0 0;
     text-align: left;
+    line-height: 1.35;
+}
+
+#masonry-blog .project-description h2 {
+    margin-bottom: 0.15em;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+#masonry-blog .project-description p {
+    margin: 0;
+    font-size: 1rem;
 }
 
 #masonry-blog .project-description .tags {
     margin-top: auto;
-    padding-top: 4px;
+    padding-top: 0.25em;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#masonry-blog .project-description .tags > span,
+#masonry-blog .project-description .tags > a {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
 }
 
 #masonry-blog .brick:hover .cover,
@@ -276,8 +319,49 @@ p a, p a:hover {color:black;}
     font-size: 0.9rem;
 }
 
+/* keep black pill text white in the blog grid */
+#masonry-blog .tag.filter-inline {
+    color: white;
+}
+
+#masonry-blog .tag.filter-inline.active {
+    color: black;
+}
+
+/* blog filter pills */
+#blog-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.filter-pill,
+.filter-inline {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 0.4em 1em;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.filter-pill:hover,
+.filter-inline:hover {
+    opacity: 0.8;
+}
+
+.filter-pill.active,
+.filter-inline.active {
+    background: white;
+    color: black;
+}
+
 #masonry-blog .project-description h2 {
-    margin-bottom: 0.3em;
+    margin-bottom: 0.15em;
 }
 
 /* masonry gallery for blog entries */
@@ -291,6 +375,37 @@ p a, p a:hover {color:black;}
     width: 100%;
     display: block;
     margin-bottom: 8px;
+    border-radius: 2px;
+}
+
+.gallery-masonry figure {
+    margin: 0 0 8px;
+    break-inside: avoid;
+}
+.gallery-masonry figure img {
+    margin-bottom: 0;
+}
+.gallery-masonry figcaption {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    text-align: left;
+    margin-top: 2px;
+}
+
+/* force equal image heights (cropped to fit) */
+.gallery-masonry.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 auto 1em;
+    max-width: 95%;
+}
+.gallery-masonry.equal-height img {
+    height: 320px;
+    width: auto;
+    object-fit: cover;
+    flex: 1 1 auto;
+    margin-bottom: 0;
     border-radius: 2px;
 }
 
@@ -451,7 +566,16 @@ p a, p a:hover {color:black;}
 
 @media only screen and (max-width: 600px) {
   .gallery-masonry {
-	column-width: 48%;
+	column-count: 2;
+	column-width: auto;
+  }
+  .gallery-masonry.equal-height {
+    gap: 4px;
+  }
+  .gallery-masonry.equal-height img {
+    flex: 1 1 45%;
+    height: auto;
+    aspect-ratio: 3 / 4;
   }
 
   main {
@@ -525,13 +649,27 @@ footer .nav-left {
         column-gap: 0;
     }
 
+    #masonry-index,
+    #masonry-colors,
+    #masonry-bw {
+        column-width: auto;
+        column-count: 2;
+        column-gap: 5px;
+    }
+
     .brick {
         width: 100%;
-        padding: 0; 
+        padding: 0;
     }
 
     [id^=masonry-] > * {
-        break-inside: auto; 
+        break-inside: auto;
+    }
+
+    #masonry-index > *,
+    #masonry-colors > *,
+    #masonry-bw > * {
+        break-inside: avoid;
     }
 
 }
