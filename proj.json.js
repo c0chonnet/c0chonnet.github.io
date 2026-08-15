@@ -541,7 +541,7 @@ var projData = {
             "ext_link": "",
             "ext_link_text": "",
             "description": "collage, ink",
-            "title": "hps haapsalu",
+            "title": "haapsalu",
             "date": "2023",
             "tags": [
                 "bw"

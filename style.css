@@ -159,17 +159,37 @@ footer {
 
 /* /main, /colors, /bw: match blog masonry — 2 per row on mobile & tablet */
 @media screen and (max-width: 899px) {
-    #masonry-index,
-    #masonry-colors,
-    #masonry-bw {
+    [id^=masonry-]:not(#masonry-blog) {
         column-width: auto;
         column-count: 2;
         column-gap: 5px;
     }
-    #masonry-index > *,
-    #masonry-colors > *,
-    #masonry-bw > * {
+    [id^=masonry-]:not(#masonry-blog) > * {
         break-inside: avoid;
+    }
+
+    [id^=masonry-]:not(#masonry-blog) .project-description {
+        padding: 0.6em;
+        overflow-y: auto; /* safety net: never spill outside the card */
+    }
+    [id^=masonry-]:not(#masonry-blog) .project-description h2 {
+        font-size: 13px;
+        line-height: 1.15;
+        margin-bottom: 0.2em;
+    }
+    [id^=masonry-]:not(#masonry-blog) .project-description p {
+        font-size: 12px;
+        line-height: 1.25;
+    }
+    [id^=masonry-]:not(#masonry-blog) .project-description .project-date {
+        font-size: 11px;
+        margin-top: 2px;
+    }
+    [id^=masonry-]:not(#masonry-blog) .project-description .tags {
+        margin-top: 6px;
+    }
+    [id^=masonry-]:not(#masonry-blog) .project-description .tags .tag {
+        font-size: 11px;
     }
 }
 
