@@ -125,6 +125,20 @@ function createBrick(proj, useBlogCover) {
 
     descDiv.appendChild(tags);
     col.appendChild(descDiv);
+
+    // blog grid: if the post has a link, make the whole tile clickable
+    if (useBlogCover) {
+        var tileLink = proj.type === 'ext' ? proj.ext_link : proj.link;
+        if (tileLink) {
+            col.classList.add('clickable-tile');
+            col.addEventListener('click', function (e) {
+                // let the filter pills / any nested link handle their own click
+                if (e.target.closest('.tag, .filter-inline, a')) return;
+                window.location.href = tileLink;
+            });
+        }
+    }
+
     return col;
 }
 

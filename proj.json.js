@@ -3,7 +3,7 @@ var projData = {
         {
             "cover": "allns.jpg",
             "blog_cover": "allns.jpg",
-            "show_on_main": true,
+            "show_on_main": false,
             "type": "full",
             "link": "",
             "ext_link": "",
@@ -19,7 +19,7 @@ var projData = {
         {
             "cover": "chlg261.JPG",
             "blog_cover": "chlg261.JPG",
-            "show_on_main": false,
+            "show_on_main": true,
             "type": "full",
             "link": "",
             "ext_link": "",
@@ -242,7 +242,7 @@ var projData = {
             "slug": "sketchbook-flowers-2025"
         },
         {
-            "cover": "al24.png",
+            "cover": "dndbeer.gif",
             "blog_cover": "al24.png",
             "show_on_main": false,
             "type": "full",
@@ -253,6 +253,7 @@ var projData = {
             "title": "arte et labore",
             "date": "July 2025",
             "tags": [
+                "bw",
                 "news"
             ],
             "slug": "arte-et-labore-2025"
@@ -339,7 +340,7 @@ var projData = {
             "slug": "shipwreck-2024"
         },
         {
-            "cover": "tlfs.png",
+            "cover": "tlfsitf.png",
             "blog_cover": "tlfs.png",
             "show_on_main": true,
             "type": "ext",
@@ -517,6 +518,22 @@ var projData = {
             "slug": "lying-model-2023"
         },
         {
+            "cover": "tln24.png",
+            "blog_cover": "tln24.png",
+            "show_on_main": false,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "ink, pastels",
+            "title": "tallinn",
+            "date": "2024",
+            "tags": [
+                "bw"
+            ],
+            "slug": "tallinn-2024"
+        },
+        {
             "cover": "modern museum.png",
             "blog_cover": "modern museum.png",
             "show_on_main": true,
@@ -531,6 +548,38 @@ var projData = {
                 "bw"
             ],
             "slug": "modern-museum-2023"
+        },
+        {
+            "cover": "dndcol.png",
+            "blog_cover": "dndcol.png",
+            "show_on_main": false,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "ink, collage",
+            "title": "dnd collage",
+            "date": "2024",
+            "tags": [
+                "bw"
+            ],
+            "slug": "dnd-collage-2024"
+        },
+        {
+            "cover": "tln23.png",
+            "blog_cover": "tln23.png",
+            "show_on_main": true,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "collage, ink",
+            "title": "tallinn",
+            "date": "2023",
+            "tags": [
+                "bw"
+            ],
+            "slug": "tallinn-2023"
         },
         {
             "cover": "hps.png",
@@ -611,6 +660,22 @@ var projData = {
                 "bw"
             ],
             "slug": "onne-tn-2023"
+        },
+        {
+            "cover": "kat.png",
+            "blog_cover": "kat.png",
+            "show_on_main": true,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "ink",
+            "title": "katarina",
+            "date": "2023",
+            "tags": [
+                "bw"
+            ],
+            "slug": "katarina-2023"
         },
         {
             "cover": "fos.jpg",
