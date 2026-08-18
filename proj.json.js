@@ -880,6 +880,22 @@ var projData = {
             "slug": "don-2013"
         },
         {
+            "cover": "svin.gif",
+            "blog_cover": "svin.gif",
+            "show_on_main": true,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "photoshop",
+            "title": "transformation",
+            "date": "2019",
+            "tags": [
+                "colors"
+            ],
+            "slug": "transformation-2019"
+        },
+        {
             "cover": "branches.jpg",
             "blog_cover": "branches.jpg",
             "show_on_main": true,
