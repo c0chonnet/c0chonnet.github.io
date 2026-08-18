@@ -408,8 +408,8 @@ var projData = {
             "slug": "children-in-vests-2022"
         },
         {
-            "cover": "dsc.png",
-            "blog_cover": "dsc.png",
+            "cover": "dsc2.jpg",
+            "blog_cover": "dsc2.jpg",
             "show_on_main": false,
             "type": "ext",
             "link": "",
@@ -715,7 +715,7 @@ var projData = {
             "link": "",
             "ext_link": "https://www.behance.net/gallery/194313447/TEED-AR-EXHIBITION-2023",
             "ext_link_text": "view on behance",
-            "description": "group exhibition with Tartu artists",
+            "description": "group exhibition with Tartu artists and handmade AR",
             "title": "teed - ar exhibition",
             "date": "2023",
             "tags": [
