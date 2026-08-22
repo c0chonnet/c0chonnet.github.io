@@ -823,7 +823,7 @@ var projData = {
             "link": "",
             "ext_link": "https://curatorialforum.pushkinmuseum.art/3_zine",
             "ext_link_text": "visit site",
-            "description": "generative images and map art for the zine",
+            "description": "generative images, map art, cover for the interactive zine",
             "title": "zine as an exhibition",
             "date": "2020",
             "tags": [
