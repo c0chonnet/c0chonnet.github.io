@@ -114,22 +114,6 @@ var projData = {
             "slug": "karlova-2026"
         },
         {
-            "cover": "VN.jpg",
-            "blog_cover": "VN.jpg",
-            "show_on_main": false,
-            "type": "full",
-            "link": "",
-            "ext_link": "",
-            "ext_link_text": "",
-            "description": "pencils and then procreate",
-            "title": "posing friends",
-            "date": "2026",
-            "tags": [
-                "bw"
-            ],
-            "slug": "posing-friends-2026"
-        },
-        {
             "cover": "pcover.jpg",
             "blog_cover": "pcover.jpg",
             "show_on_main": true,
@@ -644,6 +628,22 @@ var projData = {
                 "bw"
             ],
             "slug": "cascais-2023"
+        },
+        {
+            "cover": "mom23.jpg",
+            "blog_cover": "mom23.jpg",
+            "show_on_main": false,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "ink",
+            "title": "mother",
+            "date": "2023",
+            "tags": [
+                "bw"
+            ],
+            "slug": "mother-2023"
         },
         {
             "cover": "annaedasi.jpeg",

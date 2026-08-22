@@ -13,7 +13,12 @@ body {
 	 font-family: "Courier", monospace;
 	 font-size: 16px;
 	 background: white;
+	 cursor: url('../media/crs2.png') 17 3, auto;
 
+}
+
+a, button {
+	 cursor: url('../media/pntr3.png') 18 0, pointer;
 }
 
 h2 {font-size: 19px;
@@ -143,7 +148,7 @@ footer {
 
 /* whole tile is a link on the blog grid when the post has one */
 #masonry-blog .brick.clickable-tile {
-    cursor: pointer;
+    cursor: url('../media/pntr3.png') 18 0, pointer;
 }
 
 /* tablets: 2 per row */
@@ -224,7 +229,7 @@ p a, p a:hover {color:black;}
 	 border-radius: 16px;
 	 text-transform: none;
 	 font-size: 1.1rem;
-	 cursor:pointer;
+	 cursor: url('../media/pntr3.png') 18 0, pointer;
 }
 
 .project-date {
@@ -370,7 +375,7 @@ p a, p a:hover {color:black;}
     border-radius: 16px;
     font-size: 0.9rem;
     text-decoration: none;
-    cursor: pointer;
+    cursor: url('../media/pntr3.png') 18 0, pointer;
     border: 1px solid black;
 }
 
@@ -464,7 +469,7 @@ p a, p a:hover {color:black;}
     border: none;
     font-size: 1.6rem;
     font-weight: bold;
-    cursor: pointer;
+    cursor: url('../media/pntr3.png') 18 0, pointer;
     padding: 0.2em 0.4em;
     color: #000;
     line-height: 1;
@@ -482,7 +487,7 @@ p a, p a:hover {color:black;}
 .privacy-link {
     color: inherit;
     text-decoration: underline;
-    cursor: pointer;
+    cursor: url('../media/pntr3.png') 18 0, pointer;
     padding: 0;
     margin-left: 0.5em;
     line-height: inherit;
@@ -523,7 +528,7 @@ p a, p a:hover {color:black;}
 .popup-close {
     display: inline-block;
     margin-left: auto;
-    cursor: pointer;
+    cursor: url('../media/pntr3.png') 18 0, pointer;
     background: none;
     border: 1px solid var(--color-lightGrey);
     border-radius: 16px;
