@@ -821,7 +821,7 @@ var projData = {
             "show_on_main": false,
             "type": "ext",
             "link": "",
-            "ext_link": "https://eng.curatorialforum.art/zine_as_an_exhibition",
+            "ext_link": "https://curatorialforum.pushkinmuseum.art/3_zine",
             "ext_link_text": "visit site",
             "description": "generative images and map art for the zine",
             "title": "zine as an exhibition",
