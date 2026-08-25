@@ -1,6 +1,22 @@
 var projData = {
     "projects": [
         {
+            "cover": "backpacker.png",
+            "blog_cover": "backpacker.png",
+            "show_on_main": true,
+            "type": "full",
+            "link": "",
+            "ext_link": "",
+            "ext_link_text": "",
+            "description": "procreate",
+            "title": "backpacker",
+            "date": "2026",
+            "tags": [
+                "bw"
+            ],
+            "slug": "backpacker-2026"
+        },
+        {
             "cover": "allns.jpg",
             "blog_cover": "allns.jpg",
             "show_on_main": false,
